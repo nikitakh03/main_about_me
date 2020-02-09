@@ -15,13 +15,12 @@ html {
 .header {
     background-image: url(/img/bacground/bg-header.png);
     background-repeat: no-repeat;
-		background-size: 100%;
+	background-size: 100%;
 }
 
 .logo {
 		margin-left: 50px;
-		margin-top: 20px;
-		display: inline-block;
+		margin-top: 20px; I
 }
 
 .logosik {
@@ -29,19 +28,11 @@ html {
     width: 50px;
 }
 
-.nav {
-    width: 50%;
-    height: 25px;
-		float: right;
-		margin-top: 35px;
-}
-
 .nav li>a {
     text-decoration: none;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-		margin-left: 45px;
 }
 
 li>a:hover {
@@ -53,6 +44,5 @@ li>a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
-		display: inline;
 }
 
