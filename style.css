@@ -1,0 +1,47 @@
+html {
+    font-family: "Monserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+  
+    /*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    */
+
+.header {
+    background-image: url(img/bacground/bg-header.jpg);
+    background-repeat: no-repeat;
+}
+
+.logosik {
+    height: 50px;
+    width: 50px;
+}
+
+.nav {
+    width: 100%;
+    height: 25px;
+}
+
+.nav li>a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+li>a:hover {
+    color: skyblue;
+    transition: 0.5s;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
