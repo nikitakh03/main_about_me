@@ -13,19 +13,35 @@ html {
     */
 
 .header {
+	background: black;
     background-image: url(/img/bacground/bg-header.png);
     background-repeat: no-repeat;
-	background-size: 100%;
-}
-
-.logo {
-		margin-left: 50px;
-		margin-top: 20px; I
+	background-position: center;
+	background-size: cover;
+	
+    /* адаптив по высоте */
+	height: 100vh;
+    
 }
 
 .logosik {
+    padding-top: 20px;
+	margin-left: 50px;
     height: 50px;
     width: 50px;
+    
+    display: inline-block;
+}
+
+.nav {
+    float: right;
+}
+
+.nav li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
 
 .nav li>a {
@@ -33,16 +49,45 @@ html {
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    
+    display: block;
+    position: relative;
+    line-height: 60px;
+    padding-left: 20px;
 }
+
+
+/* АДАПТИВ ДЛЯ НАВИГАЦИИ */
+
+@media (max-width: 660px) {
+
+.nav {
+    float: none;
+    padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+
+.nav li {
+    display: block;
+    }
+
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+/* КОНЕЦ АДАПТИВА НАВИГАЦИИ */
 
 li>a:hover {
     color: skyblue;
     transition: 0.5s;
 }
 
-.nav li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
