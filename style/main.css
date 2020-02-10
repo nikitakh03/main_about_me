@@ -12,8 +12,7 @@ html {
     */
 
 .header {
-	background: black;
-    background-image: url(/img/bacground/bg-header.png);
+    background-image: url(../img/bacground/bg-header2.png);
     background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
