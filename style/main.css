@@ -4,7 +4,6 @@ html {
     line-height: 1.5;
 }
 
-  
     /*
     font-family: 'Montserrat', sans-serif;
     font-family: 'Teko', sans-serif;
@@ -53,9 +52,16 @@ html {
     display: block;
     position: relative;
     line-height: 60px;
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
+li>a:hover {
+    color: skyblue;
+    transition: 0.5s;
+    border-bottom: skyblue 3px dashed;
+    border-top: skyblue 3px dashed;
+}
 
 /* АДАПТИВ ДЛЯ НАВИГАЦИИ */
 
@@ -79,15 +85,10 @@ html {
   padding: 20px 0 0 0;
 }
 
-/* КОНЕЦ АДАПТИВА НАВИГАЦИИ */
-
-li>a:hover {
-    color: skyblue;
-    transition: 0.5s;
-}
-
 .header:after {
   content: "";
   display: table;
   clear: both;
 }
+
+/* КОНЕЦ АДАПТИВА НАВИГАЦИИ */
