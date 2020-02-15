@@ -1,0 +1,175 @@
+    /*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    */
+
+body {
+	font-family: "Monserrat", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+    
+	margin: 0;
+	color: #333;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Intro */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+	width: 100%;
+	height: 100vh;
+
+	background:
+    linear-gradient( rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.3) ),
+		url("img/background/bg-intro31.jpg") center no-repeat;
+	background-size: cover;
+  padding-top: 80px;
+}
+
+.intro__inner {
+ width: 100%;
+ max-width: 880px;
+ margin: 0 auto;
+ 
+ text-align: center;
+}
+
+.intro__title {
+ font-family: 'Ubuntu', sans-serif;
+ 
+ color: black;
+ font-size: 100px;
+ font-weight: bold;
+ line-height: 1;
+}
+
+.intro__title:after {
+ content: "";
+ display: block;
+ width: 60px;
+ height: 3px;
+ margin: 60px auto;
+ 
+ background-color: black;
+}
+
+.intro__suptitle {
+ margin-bottom: 20px;
+ 
+ font-size: 50px;
+ color: deepskyblue;
+ font-family: 'Teko', sans-serif;
+}
+
+h1:hover, h2:hover, .fa-angle-down:hover {
+ color: deepskyblue;
+ transition: opacity .1s linear;
+}
+
+/* Header */
+.header {
+ width: 100%;
+ padding-top: 15px;
+ 
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 1000; 
+}
+
+.header__inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.header__logo img {
+ 	height: 50px;
+	width: 50px;
+}
+
+/* Navigation */
+.nav {
+ font-size: 14px;
+ text-transform: uppercase;
+}
+
+.nav__link {
+ display: inline-block;
+ vertical-align: top;
+ margin: 0 15px;
+ position: relative;
+ 
+ color: black;
+ font-weight: 700;
+ text-decoration: none;
+ 
+ transition: color .1s linear;
+}
+
+.nav__link:after {
+ content: "";
+ display: block;
+ width: 100%;
+ height: 3px;
+ opacity: 0;
+ 
+ background-color: deepskyblue;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ z-index: 1;
+ 
+ transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+ color: deepskyblue;
+}
+
+.nav__link:hover:after {
+ opacity: 1;
+}
+
+/* Button */
+.btn {
+ display: inline-block;
+ vertical-align: top;
+ padding: 0 15px;
+ color: deepskyblue;
+ transition: color .1s linear;
+ 
+ background: #fff;
+ border-radius: 5px;
+}
+
+.btn i {
+  font-size: 65px; 
+}
+
+.btn i:hover {
+ color: deepskyblue;
+}
